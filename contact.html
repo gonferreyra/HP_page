@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hp Laptops</title>
+    <title>HP - Contact</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,24 +27,38 @@
             </ul>
         </div>
     </nav>
-    <section class="info">
-        <div class="laptops">
-            <img src="./img/HPenvy17t-ch.png" alt="">
-            <p>HP ENVY Laptop - 17t-ch000 touch</p>
+    <div class="contact_text">
+        <h2>Do you have any question for us??</h2>
+        <p>We are at your disposal. We can offer you everything you need, from expert advice to complex problem solving.</p>
+    </div>
+    <div class="float">
+        <div class="box">
+            <img src="./img/unnamed.png" alt="img">
         </div>
-        <div class="laptops">
-            <img src="./img/hpenvyx360.png" alt="">
-            <p>HP ENVY x360 Convert 13</p>
+        <div class="box">
+            <form>
+                <label for="name">
+                    Name:
+                <input type="text" placeholder="John Doe" required>
+                </label>
+                <label for="mail">
+                    Email: 
+                <input type="email" placeholder="name@mail.com" required>
+                </label>
+                <label for="products">Do you own HP products?:
+                    <select>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="cb">Considering buying one</option>
+                    </select>
+                </label>
+                <label for="tel">Cell Number:
+                    <input type="tel" maxlength="11" minlength="9" required>
+                </label>
+                <input class="sub_button" type="submit" value="Send">
+            </form>
         </div>
-        <div class="laptops">
-            <img src="./img/hpenvyx360convenrt15.png" alt="">
-            <p>HP ENVY x360 Convertible Laptop - 15z</p>
-        </div>
-        <div class="laptops">
-            <img src="./img/hpenvy17t-ch100.png" alt="">
-            <p>HP ENVY Laptop - 17t-ch100</p>
-        </div>
-    </section>
+    </div>
     <footer>
         <div class="footer">
             <a href="https://github.com/gonferreyra/HP_page" target="_blank" style="text-decoration: none;">
@@ -53,6 +67,5 @@
             </a>
         </div>
     </footer>
-
 </body>
 </html>
