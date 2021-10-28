@@ -91,9 +91,9 @@ footer{
 
 /*---------------------------------- GRID about site---------------------------------- */
 
-.container{
-    /* border: 1pz solid black; */
-}
+/* .container{
+    border: 1pz solid black;
+} */
 .container div{
     /* border: 1px solid blue; */
     width: 100%;
@@ -130,9 +130,9 @@ footer{
     line-height: 50px; 
     vertical-align:middle;
 }
-.contact_text h2, p{
-    /* margin: 10px; */
-}
+/* .contact_text h2, p{
+    margin: 10px;
+} */
 .contact_text p{
     font-size: 1.1em;
 }
