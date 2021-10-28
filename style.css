@@ -26,7 +26,11 @@ body{
 }
 .navbar .logo img{
     height: 3em;
+    transition: 2s;
     
+}
+.navbar .logo img:hover{
+    transform: rotate(360deg);
 }
 .navbar .logo h2{
     padding-left: 15px ;
