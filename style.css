@@ -97,7 +97,8 @@ footer{
 .container div{
     /* border: 1px solid blue; */
     width: 100%;
-    height: 200px;
+    min-height: 200px;
+    /* con min-height cuando se achca demasiado el viewport, no se sale el parrafo afuera del div sino que agranda el div */
 }
 .container .content1 p{
     padding: 65px;
@@ -124,7 +125,7 @@ footer{
 .contact_text{
     text-align: center;
     width: 100%;
-    height: 95px;
+    min-height: 95px;
     background-color: #A8DADC;
     /* margin: 25px; */
     line-height: 50px; 
