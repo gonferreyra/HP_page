@@ -12,17 +12,17 @@ body{
 .navbar{
     /* border: 1px solid red; */
     width: 100%;
-    height: 11em;
+    height: 10em;
     padding: 10px;
-    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    line-height: 20px;
 }
 .logo{
+    /* border: 1px solid black; */
     display: flex;
-    align-items: center;
 }
 .navbar .logo img{
     height: 3em;
@@ -38,22 +38,24 @@ body{
 .nav_menu ul{
     list-style: none;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
 }
 .nav_menu li{
+    /* border: 1px solid black; */
     text-align: center;
     font-size: 1.1em;
-    padding: 0.5em 1.1em;
+    padding: 0.6em;
+}
+.info_conteiner {
+    background-color: #a8dadc;
+    padding: 55px 0;
 }
 .info{
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 25px;
     justify-content: center;
     align-items: center;
-    background-color: #a8dadc;
     padding: 1em 0em;
 
 }
@@ -64,21 +66,31 @@ body{
     gap: 15px;
 }
 .info .laptops img{
-    width: 40%;
+    width: 100%;
+    max-width: 250px;
+}
+.conteiner_center {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.test1 {
+    background-color: white;
 }
 
 footer{
-    background-color: #f1faee;
+    background-color: #1D3557;
     width: 100%;
     text-align: center;
 }
 .footer a img{
     width: 100px;
-    margin-top: 15px;
 }
 .footer a p{
-    color:black;
+    color:white;
     margin: 5px auto 15px;
+    text-align: center;
 }
 
 
@@ -86,69 +98,79 @@ footer{
 
 .hp_factory .hp_picture img{
     width: 100%;
-    height: 33em;
+    height: auto;
 }
+/* Se hace responsive la imagen seteando el width 100 y height auto. A medida que se achica el viewport la imagen se achica en escala */
 
-/*---------------------------------- GRID about site---------------------------------- */
+/* About nuevo con flex */
 
-/* .container{
-    border: 1pz solid black;
-} */
-.container div{
-    /* border: 1px solid blue; */
+.conteiner{
+    background-color: white;
+    /* color: white; */
     width: 100%;
-    min-height: 200px;
-    /* con min-height cuando se achca demasiado el viewport, no se sale el parrafo afuera del div sino que agranda el div */
+    display: flex;
+    flex-direction: column;
+    padding: 20px 35px;
+    align-items: center;
 }
-.container .content1 p{
-    padding: 65px;
-}
-.container .content2 p{
-    padding: 45px;
-}
-.img1 img{
+.conteiner_2 {
+    background-color: white;
+    /* color: white; */
     width: 100%;
-    height: 197px;
+    /* height: 250px; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px 35px;
+    /* justify-content: center; */
+    align-items: center;
 }
-.img2 img{
-    width: 100%;
-    height: 197px;
-}
-.content1, .content2{
-    background-color: #457b9d;
+.content1{
+    background-color: #457B9D;
     color: white;
 }
-
+.img1 img{
+    max-width: 90%;
+    max-height: 80%;
+    margin: 0 20px;
+}
 
 /* ---------------------Contact------------------------- */
 
-.contact_text{
-    text-align: center;
+.text_contact {
     width: 100%;
-    min-height: 95px;
+    /* min-height: 95px; */
     background-color: #A8DADC;
     /* margin: 25px; */
-    line-height: 50px; 
-    vertical-align:middle;
+    /* line-height: 150px; 
+    vertical-align:middle; */
 }
-/* .contact_text h2, p{
-    margin: 10px;
-} */
+.contact_text, h2, p{
+    line-height: 2em;
+    text-align: center;
+    /* padding: 35px 0; */
+}
 .contact_text p{
     font-size: 1.1em;
 }
 .float div{
     /* border: 1px solid red; */
-    /* text-align: center; */
+    text-align: center;
     width: 100%;
     padding: 50px;
     background-color: white;
+}
+.float input, select {
+    display: block;
+    margin: 0 auto;
+    /* Input y select son elementos inline, para centrarlos los ponemos en block y margin 0 auto */
 }
 .float .box img{
     max-width: 100%;
     max-height: 100%;
 }
 /* Se va achicando a medida que se disminuye el viewport */
+
+
 label, input, select{
     display: block;
 }
@@ -179,38 +201,33 @@ label, select{
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    /* about grid breakpoint */
-    .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr; 
-        grid-template-rows: 1fr 1fr; 
-        gap: 20px 20px; 
-        margin: 15px 25px;
-        grid-template-areas: 
-        "content1 content1 img1"
-        "img2 content2 content2";
+    .laptops {
+        width: 40%;
     }
-    .content1{
-        grid-area: content1;
+
+/* About - flex nuevo */
+    .conteiner {
+        flex-direction: row;
+        gap: 25px;
     }
     .img1{
-        grid-area: img1;
+        width: 34%;
     }
-    .img2{
-        grid-area: img2;
+    .content1 {
+        width: 65%;
     }
-    .content2{
-        grid-area: content2;
-    }
-    .container .content1 p{
-        padding: 75px;
-    }
-    .container .content2 p{
-        padding: 60px;
+    .conteiner_2 {
+        flex-direction: row;
+        gap: 25px;
     }
 
+
     /* contact breakpoint */
+    .contact_text, h2, p{
+        text-align: start;
+        padding: 8px 25px;
+    }
+
     .float div{
         width: 50%;
         float: left;
