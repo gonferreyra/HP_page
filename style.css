@@ -124,16 +124,31 @@ footer{
     /* justify-content: center; */
     align-items: center;
 }
+.conteiner_2 .img1{
+    order: 1;
+}
 .content1{
     background-color: #457B9D;
     color: white;
 }
-.img1 img{
-    max-width: 90%;
-    max-height: 80%;
-    margin: 0 20px;
+.img1 {
+    text-align: center;
 }
-
+.img1 img{
+    max-width: 50%;
+    max-height: 200px;
+    /* margin: 0 20px; */
+}
+.hp_factory{
+    height: 100%;
+}
+.hp_picture{
+    /* max-width: 1280px; */
+    max-height: 640px;
+}
+.box_one{
+    overflow: hidden;
+}
 /* ---------------------Contact------------------------- */
 
 .text_contact {
@@ -220,7 +235,12 @@ label, select{
         flex-direction: row;
         gap: 25px;
     }
-
+    .conteiner_2 .img1{
+        order: 0;
+    }
+    .hp_factory .hp_picture, img{
+        overflow: hidden;
+    }
 
     /* contact breakpoint */
     .contact_text, h2, p{
