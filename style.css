@@ -46,6 +46,12 @@ body{
     font-size: 1.1em;
     padding: 0.6em;
 }
+a:hover{
+    color: black;
+}
+.nav_menu ul li a{
+    text-decoration: none;
+}
 .info_conteiner {
     background-color: #a8dadc;
     padding: 55px 0;
@@ -89,7 +95,6 @@ footer{
 }
 .footer a p{
     color:white;
-    margin: 5px auto 15px;
     text-align: center;
 }
 
@@ -130,6 +135,7 @@ footer{
 .content1{
     background-color: #457B9D;
     color: white;
+    border-radius: 10px;
 }
 .img1 {
     text-align: center;
@@ -193,14 +199,20 @@ label, select{
     margin-bottom: 15px;
 }
 .sub_button{
-    width: 155px;
-    height: 25px;
-    background: #1D3557;
+    background: #457b9d;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: none;
+	cursor:pointer;
+	font-style:italic;
+	padding: 5px 30px;
+}
+.sub_button:hover{
+    background: #1d3557;
 }
 
-@media (min-width: 768px) {
+/* Indicamos que tendra un minimo de pantalla de 768, a partir del cual sumara las nuevas propiedades reemplazando las que correspondan */
+@media screen and (min-width: 768px) {
     .navbar{
         flex-direction: row;
         justify-content: space-between;
